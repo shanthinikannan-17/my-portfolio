@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-950 text-white font-sans;
+}
+
+/* gradient background utility */
+.gradient-bg {
+  background: linear-gradient(135deg,#4f46e5,#9333ea,#ec4899);
+}
