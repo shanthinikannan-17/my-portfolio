@@ -75,7 +75,7 @@ export default function About() {
 
           {/* Resume Button */}
           <a
-            href="public/resume.pdf"
+            href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-7 py-3 rounded-full 
