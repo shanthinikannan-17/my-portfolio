@@ -10,12 +10,13 @@ const interests = [
       "I enjoy Tamil novels and self-help books that improve thinking and creativity.",
   },
   {
-    title: "Podcasts",
-    icon: FaHeadphones,
-    images: ["/images/podcast1.jpg", "/images/podcast2.jpg"],
-    description:
-      "Listening to podcasts about technology, psychology and personal growth.",
-  },
+  title: "Podcasts",
+  icon: FaHeadphones,
+  images: ["/images/podcast1.jpg", "/images/podcast2.jpg"],
+  description:
+    "Listening to podcasts about technology, personal growth and something new about my opinions.",
+  link: "https://open.spotify.com/show/24IiVqJ3MPxQDUXICZ91ED?si=p6pXb4w9Toi3uSkgILkjSA"
+},
   {
     title: "Art & Painting",
     icon: FaPaintBrush,
@@ -129,6 +130,17 @@ export default function Interests() {
             <p className="text-sm md:text-[15px] text-slate-200 mb-5">
               {selected.description}
             </p>
+
+            {selected.link && (
+  <a
+    href={selected.link}
+    target="_blank"
+    rel="noreferrer"
+    className="inline-block mb-4 text-cyan-300 underline hover:text-cyan-400"
+  >
+    🎧 Listen on Spotify
+  </a>
+)}
 
             <div className="grid grid-cols-2 gap-3">
               {selected.images.map((img, i) => (
